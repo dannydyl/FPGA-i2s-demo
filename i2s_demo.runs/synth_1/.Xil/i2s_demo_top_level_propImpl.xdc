@@ -1,0 +1,22 @@
+set_property SRC_FILE_INFO {cfile:c:/Users/danny/OneDrive/Desktop/FPGA/i2s_demo/i2s_demo.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc rfile:../../../i2s_demo.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc id:1 order:EARLY scoped_inst:i2s_inst/i2s_clock/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/danny/OneDrive/Desktop/FPGA/i2s_demo/i2s_demo.xdc rfile:../../../i2s_demo.xdc id:2} [current_design]
+current_instance i2s_inst/i2s_clock/inst
+set_property src_info {type:SCOPED_XDC file:1 line:54 export:INPUT save:INPUT read:READ} [current_design]
+set_input_jitter [get_clocks -of_objects [get_ports clk_in1]] 0.100
+current_instance
+set_property src_info {type:XDC file:2 line:7 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN W5 [get_ports {clk_in}]
+set_property src_info {type:XDC file:2 line:12 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V17 [get_ports {reset_n}]
+set_property src_info {type:XDC file:2 line:16 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V16 [get_ports {reset_n2}]
+set_property src_info {type:XDC file:2 line:140 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN H1 [get_ports {mclk}]
+set_property src_info {type:XDC file:2 line:143 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN K2 [get_ports {lrck}]
+set_property src_info {type:XDC file:2 line:146 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN H2 [get_ports {sclk}]
+set_property src_info {type:XDC file:2 line:149 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN G3 [get_ports {sd_rx}]
+set_property src_info {type:XDC file:2 line:271 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN A18 [get_ports uart_tx_serial]

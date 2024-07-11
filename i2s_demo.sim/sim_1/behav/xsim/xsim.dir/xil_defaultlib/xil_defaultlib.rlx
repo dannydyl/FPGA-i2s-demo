@@ -1,0 +1,13 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/danny/OneDrive/Desktop/FPGA/i2s_demo/i2s_demo.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v,1718313894,verilog,,,,clk_wiz_0,,,../../../../i2s_demo.ip_user_files/ipstatic,,,,,
+C:/Users/danny/OneDrive/Desktop/FPGA/i2s_demo/i2s_demo.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v,1718313894,verilog,,C:/Users/danny/OneDrive/Desktop/FPGA/i2s_demo/i2s_demo.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../i2s_demo.ip_user_files/ipstatic,,,,,
+C:/Users/danny/OneDrive/Desktop/FPGA/i2s_demo/i2s_demo.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Users/danny/OneDrive/Desktop/FPGA/i2s_demo/i2s_demo.srcs/sim_1/new/i2s_demo_top_level_tb.vhd,1720587105,vhdl,,,,i2s_demo_top_level_tb,,,,,,,,
+C:/Users/danny/OneDrive/Desktop/FPGA/i2s_demo/i2s_demo.srcs/sources_1/new/BRAM.vhd,1720675448,vhdl2008,,,,bram,,,,,,,,
+C:/Users/danny/OneDrive/Desktop/FPGA/i2s_demo/i2s_demo.srcs/sources_1/new/UART_TX.vhd,1720662279,vhdl,,,,uart_tx,,,,,,,,
+C:/Users/danny/OneDrive/Desktop/FPGA/i2s_demo/i2s_demo.srcs/sources_1/new/i2s_demo_top_level.vhd,1720725262,vhdl2008,,,,i2s_demo_top_level,,,,,,,,
+C:/Users/danny/OneDrive/Desktop/FPGA/i2s_demo/i2s_demo.srcs/sources_1/new/i2s_receiver.vhd,1720499639,vhdl,,,,i2s_receiver,,,,,,,,
+C:/Users/danny/OneDrive/Desktop/FPGA/i2s_demo/i2s_demo.srcs/sources_1/new/i2s_top_level.vhd,1720560157,vhdl2008,,,,i2s_toplevel,,,,,,,,

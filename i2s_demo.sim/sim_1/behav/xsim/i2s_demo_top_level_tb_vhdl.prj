@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../i2s_demo.srcs/sources_1/new/UART_TX.vhd" \
+"../../../../i2s_demo.srcs/sources_1/new/i2s_receiver.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../i2s_demo.srcs/sources_1/new/BRAM.vhd" \
+"../../../../i2s_demo.srcs/sources_1/new/i2s_demo_top_level.vhd" \
+"../../../../i2s_demo.srcs/sources_1/new/i2s_top_level.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../i2s_demo.srcs/sim_1/new/i2s_demo_top_level_tb.vhd" \
+
+# Do not sort compile order
+nosort
