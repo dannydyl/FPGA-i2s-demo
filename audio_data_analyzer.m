@@ -62,6 +62,19 @@ histogram(data, 100);
 title('Histogram of Audio Data');
 xlabel('Value');
 ylabel('Frequency');
+% Create the plot
+% Apply a moving average filter to smooth the data
+smoothed_data = movmean(data, 100);  % Adjust the window size based on your data
 
-% Play the audio (be careful with volume!)
-% sound(audioFloat, Fs);
+% Create a large, detailed plot
+figure('Position', [100, 100, 2000, 600]);  % Adjust figure size
+plot(t, smoothed_data, 'b');  % Plot smoothed data
+title('Smoothed Audio Signal in Time Domain');
+xlabel('Time (seconds)');
+ylabel('Amplitude');
+xlim([0 t(end)]);  % Adjust x-axis to show entire range
+grid on;  % Enable grid
+
+% Interactively explore data
+zoom xon;  % Enable horizontal zoom
+pan xon;   % Enable panning
