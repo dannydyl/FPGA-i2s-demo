@@ -6,6 +6,11 @@ The I2S Demo project is a sub-project of NodeTuner, developed to verify the char
 ## Objective
 The primary goal of this project is to capture and analyze real audio signals, enhancing the NodeTuner project's ability to process audio data accurately.
 
+## MATLAB Plot
+![MATLAB Plot1 Histogram, time domain, FFT, Spectrogram](image.png)
+![MATLAB Plot2 FFT (time domain)](plot2_image.png)
+
+
 ## Components
 - **I2S Top-Level Entity**: Manages interfacing and signal processing.
 - **I2S Receiver**: Captures audio data through the I2S interface.
