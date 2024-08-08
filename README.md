@@ -4,7 +4,7 @@
 The I2S Demo project is a sub-project of NodeTuner, developed to verify the characteristics of real-world audio signals against those observed in simulations. Initially motivated by the discovery that simulated audio signals appeared as clean sine waves, I started this project to understand how these compare to actual audio inputs.
 
 ## Objective
-The primary goal of this project is to capture and analyze real audio signals, enhancing the NodeTuner project's ability to process audio data accurately.
+The primary objective of this project is to capture and analyze real-world audio signals, significantly enhancing the accuracy of NodeTuner’s audio processing capabilities. A critical aspect of achieving this objective involves the implementation of Clock Domain Crossing (CDC) techniques. These techniques are essential for ensuring data integrity and timing precision when transferring data across components operating at different clock frequencies. CDC helps to avoid issues like data corruption and loss, which can occur when signals cross between the faster I2S clock domain and the slower UART domain. By effectively managing these transitions, CDC ensures that the system can handle high-speed data acquisition and slow-speed data communication without compromising the accuracy and reliability of the audio data analysis.
 
 ## MATLAB Plot
 ![MATLAB Plot1 Histogram, time domain, FFT, Spectrogram](image.png)
@@ -29,4 +29,4 @@ The primary goal of this project is to capture and analyze real audio signals, e
 ## Challenges and Solutions
 I encountered significant challenges with timing and metastability due to the different clock rates of the I2S and UART interfaces. To manage these issues:
 - **Dual Clock Frequencies**: I configured the BRAM entity to operate with two different clock frequencies. The first is synchronized with the I2S input to ensure accurate and immediate data capture. The second matches the UART output, which operates at a slower rate, to manage data transmission to the PC effectively.
-- **FIFO Management**: I implemented a FIFO system within the BRAM to balance the input and output data flow. This method allows the data to accumulate from the faster I2S input and then be released in a controlled manner to the slower UART output, preventing data loss and ensuring stability.
+- **FIFO Management and CDC: A FIFO system was implemented within the BRAM to facilitate a stable transfer of data between the two clock domains. Clock Domain Crossing (CDC) techniques were applied to ensure that the data transitions smoothly and reliably from the faster I2S clock domain to the slower UART domain, mitigating risks of data loss and ensuring overall system stability.
